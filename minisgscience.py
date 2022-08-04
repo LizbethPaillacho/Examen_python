@@ -55,6 +55,7 @@ def map_science(tipo):
             zip_count.append(zipcodes.count(z))
     import matplotlib.pyplot as plt
     #%matplotlib inline
+    fig = plot.figure()
     plt.scatter(zip_long, zip_lat, s = zip_count, c= zip_count)
     plt.colorbar()
 # only continental us without Alaska
